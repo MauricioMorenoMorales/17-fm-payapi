@@ -1,11 +1,10 @@
 import React from 'react';
+import { Header } from './components';
 
 const App = () => {
 	return (
 		<div>
-			<h4 className="dark" data-color="dark">
-				Testing this thing Q
-			</h4>
+			<Header />
 		</div>
 	);
 };
