@@ -25,6 +25,28 @@ const Styles = styled.div`
 			}
 		}
 	}
+	@media screen and (min-width: 768px) {
+		.footer {
+			display: flex;
+			justify-content: space-between;
+			padding: 35px 20px;
+			max-width: 1200px;
+			margin: 0 auto;
+			&__left {
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				& > * {
+					margin-top: 0;
+					margin-right: 20px;
+				}
+			}
+			&__right {
+				margin: 0;
+				align-items: center;
+			}
+		}
+	}
 `;
 
 export default Styles;

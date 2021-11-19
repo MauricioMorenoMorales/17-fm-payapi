@@ -5,7 +5,7 @@ import { colorSystem } from '../../../global/designSystem';
 const Styles = styled.span`
 	cursor: pointer;
 	.svg-path {
-		transition: 0.3s;
+		transition: 0.2s;
 	}
 	& > svg:hover > .svg-path {
 		cursor: pointer;
