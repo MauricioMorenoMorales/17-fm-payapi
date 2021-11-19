@@ -1,14 +1,23 @@
 import React from 'react';
-import { Icons } from '../../components/atoms';
+import { EmailInput } from '../../components';
+import HeroImage from '../../assets/home/desktop/illustration-phone-mockup.svg';
 import Styles from './Home.styles';
 
 const Home = () => {
 	return (
 		<Styles>
-			<h1>This is a home :3</h1>
-			<Icons type="facebook" />
-			<Icons type="facebook" />
-			<Icons type="facebook" />
+			<section className="hero">
+				<figure className="hero__figure">
+					<img className="hero__figure__image" src={HeroImage} alt="" />
+				</figure>
+				<div className="hero__text">
+					<h1>Start building with our APIs for absolutely free.</h1>
+					<EmailInput />
+					<p>
+						Have any questions? <b>Contact US</b>
+					</p>
+				</div>
+			</section>
 		</Styles>
 	);
 };

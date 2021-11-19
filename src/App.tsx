@@ -7,7 +7,8 @@ const App = () => {
 	return (
 		<div>
 			<Header />
-			<div className="main-container" style={{ marginTop: '-100px' }}>
+			{/* The Page element must contain in ther styles a padding top: 100px */}
+			<div className="main-container" style={{ marginTop: '-120px' }}>
 				<Routes>
 					<Route path="/" element={<Home />} />
 				</Routes>
