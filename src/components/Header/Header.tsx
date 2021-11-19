@@ -4,7 +4,7 @@ import Logo from '../../assets/shared/desktop/logo.svg';
 import './Hamburger.css';
 
 const Header = () => {
-	const [menuOpened, setMenuOpened] = useState(true);
+	const [menuOpened, setMenuOpened] = useState(false);
 	return (
 		<Styles>
 			<header className="header">

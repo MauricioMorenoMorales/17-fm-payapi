@@ -46,9 +46,8 @@ h4 {
 }
 
 p {
-	font-size: 1.5px;
+	font-size: 1.5rem;
 	line-height: 2.8rem;
-	color: var(--mirage-blue);
 }
 
 a {
@@ -56,6 +55,8 @@ a {
 	text-decoration: none;
 	font-size: 1.5rem;
 	line-height: 1.5rem;
+	font-weight: bold;
+	font-family: 'Public Sans', sans-serif;
 }
 
 a:hover {
