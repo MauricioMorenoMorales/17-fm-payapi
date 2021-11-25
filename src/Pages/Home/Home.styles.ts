@@ -78,7 +78,6 @@ const Styles = styled.div`
 	}
 	.simple {
 		margin-top: 100px;
-		margin-bottom: 100px;
 		&__figure {
 			display: flex;
 			justify-content: center;
@@ -93,6 +92,22 @@ const Styles = styled.div`
 			margin: 0 auto;
 			& > p {
 				color: ${colorSystem.lightSanJuanBlue};
+			}
+		}
+	}
+	.features {
+		width: 100%;
+		max-width: 320px;
+		margin: 0 auto;
+		&__item {
+			text-align: center;
+			margin-top: 40px;
+			&__figure {
+				&__image {
+					border: 1px solid ${colorSystem.green};
+					border-radius: 50%;
+					padding: 1px;
+				}
 			}
 		}
 	}
@@ -141,6 +156,14 @@ const Styles = styled.div`
 			&__text {
 				max-width: 520px;
 				margin-top: -100px;
+			}
+		}
+		.features {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			max-width: 1200px;
+			&__item {
+				padding: 0 15px;
 			}
 		}
 	}

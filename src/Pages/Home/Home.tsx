@@ -12,6 +12,10 @@ import Oracle from '../../assets/shared/desktop/oracle-light.svg';
 import Google from '../../assets/shared/desktop/google-light.svg';
 import Nvidia from '../../assets/shared/desktop/nvidia-light.svg';
 import Styles from './Home.styles';
+// Features
+import PersonalFinances from '../../assets/home/desktop/icon-personal-finances.svg';
+import Banking from '../../assets/home/desktop/icon-banking-and-coverage.svg';
+import ConsumerPayments from '../../assets/home/desktop/icon-consumer-payments.svg';
 
 const Home = () => {
 	return (
@@ -83,6 +87,59 @@ const Home = () => {
 						checkout flow and designed to optimize conversion.
 					</p>
 				</section>
+			</article>
+			<article className="features">
+				<div className="features__item">
+					<figure className="features__item__figure">
+						<img
+							src={PersonalFinances}
+							alt=""
+							className="features__item__figure__image"
+						/>
+					</figure>
+					<section className="features__item__text">
+						<h3>Personal Finances</h3>
+						<p>
+							Consolidate financial data from multiple sources and categorize
+							transactions up to 2 years of history. Analyze reports to
+							reconcile activities in your account.
+						</p>
+					</section>
+				</div>
+				<div className="features__item">
+					<figure className="features__item__figure">
+						<img
+							src={Banking}
+							alt=""
+							className="features__item__figure__image"
+						/>
+					</figure>
+					<section className="features__item__text">
+						<h3>Banking & Coverage</h3>
+						<p>
+							With our platform, you can speed up account onboarding and support
+							ongoing payments for checking, savings, credit card, and brokerage
+							accounts.
+						</p>
+					</section>
+				</div>
+				<div className="features__item">
+					<figure className="features__item__figure">
+						<img
+							src={ConsumerPayments}
+							alt=""
+							className="features__item__figure__image"
+						/>
+					</figure>
+					<section className="features__item__text">
+						<h3>Consumer Payments</h3>
+						<p>
+							It’s easier to set up secure bank payments with us through a flow
+							designed with the user experience in mind. Customers could
+							instantly authenticate their account.
+						</p>
+					</section>
+				</div>
 			</article>
 		</Styles>
 	);

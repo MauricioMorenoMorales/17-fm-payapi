@@ -5,6 +5,7 @@ export const colorSystem = {
 	mirageBlue: '#1b262f',
 	charmPinkActive: '#da6d97',
 	lightSanJuanBlue: '#6c8294',
+	green: '#36536B',
 };
 
 export const shadowSystem = {
