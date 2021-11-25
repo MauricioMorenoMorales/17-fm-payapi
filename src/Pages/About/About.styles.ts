@@ -14,6 +14,12 @@ const Styles = styled.div`
 		text-align: center;
 		margin: 100px auto;
 	}
+	& > picture > img {
+		width: 100%;
+		margin: 100px 0;
+		max-width: 1920px;
+		margin: 0 auto;
+	}
 	.mission {
 		max-width: 400px;
 		margin: 0 auto;

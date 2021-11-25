@@ -1,5 +1,8 @@
 import React from 'react';
 import Styles from './About.styles';
+import MobileImage from '../../assets/about/mobile/image-team-members.jpg';
+import TabletImage from '../../assets/about/tablet/image-team-members.jpg';
+import DesktopImage from '../../assets/about/desktop/image-team-members.jpg';
 
 const About = () => {
 	return (
@@ -26,6 +29,11 @@ const About = () => {
 					traditional financial institutions and developers.{' '}
 				</p>
 			</article>
+			<picture>
+				<source srcSet={DesktopImage} media="screen and (min-width: 900px)" />
+				<source srcSet={TabletImage} media="screen and (min-width: 768px)" />
+				<img src={MobileImage} alt="Team Members" />
+			</picture>
 			<article className="mission">
 				<h4>Our Business</h4>
 				<p>
@@ -43,8 +51,6 @@ const About = () => {
 					backgrounds and skills.
 				</p>
 			</article>
-			<h2>About</h2>
-			<h2>About</h2>
 		</Styles>
 	);
 };
