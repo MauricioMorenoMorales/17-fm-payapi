@@ -14,4 +14,5 @@ export const shadowSystem = {
 
 export const fontSystem = {
 	normal: "'Public Sans', sans-serif",
+	accent: "'DM Serif Display', serif",
 };

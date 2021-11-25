@@ -34,6 +34,20 @@ const About = () => {
 				<source srcSet={TabletImage} media="screen and (min-width: 768px)" />
 				<img src={MobileImage} alt="Team Members" />
 			</picture>
+			<article className="stats">
+				<div className="stats__item">
+					<p className="stats__item__title">Team Members</p>
+					<p className="stats__item__number">300+</p>
+				</div>
+				<div className="stats__item">
+					<p className="stats__item__title">Offices in theUS</p>
+					<p className="stats__item__number">3</p>
+				</div>
+				<div className="stats__item">
+					<p className="stats__item__title">Transactions analyzed</p>
+					<p className="stats__item__number">10M+</p>
+				</div>
+			</article>
 			<article className="mission">
 				<h4>Our Business</h4>
 				<p>
