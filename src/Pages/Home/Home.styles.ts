@@ -57,6 +57,22 @@ const Styles = styled.div`
 			}
 		}
 	}
+	.easy {
+		&__figure {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			&__image {
+				width: 100%;
+				max-width: 320px;
+			}
+		}
+		&__text {
+			text-align: center;
+			max-width: 320px;
+			margin: 0 auto;
+		}
+	}
 	@media screen and (min-width: 768px) {
 		.hero {
 			background-size: 150% 100%;
@@ -78,6 +94,18 @@ const Styles = styled.div`
 			}
 			&__text {
 				max-width: 600px;
+			}
+		}
+		.easy {
+			&__figure {
+				&__image {
+					max-width: 600px;
+					margin-left: 70px;
+				}
+			}
+			&__text {
+				max-width: 520px;
+				margin-top: -100px;
 			}
 		}
 	}
@@ -120,6 +148,24 @@ const Styles = styled.div`
 			&__text {
 				text-align: start;
 				padding-right: 100px;
+			}
+		}
+		.easy {
+			display: flex;
+			padding-right: 25px;
+			max-width: 1200px;
+			margin: 0 auto;
+			&__figure {
+				margin-left: -40px;
+				&__image {
+					margin: 0;
+					max-width: 900px;
+				}
+			}
+			&__text {
+				margin: 0;
+				margin-top: 70px;
+				text-align: start;
 			}
 		}
 	}

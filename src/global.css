@@ -69,8 +69,12 @@ a:hover {
 	text-decoration: underline;
 }
 
-[class*='desaturated-dark'] {
+[class~='desaturated-dark'] {
 	color: var(--light-san-juan-blue);
+}
+
+[class~='red'] {
+	color: red;
 }
 
 [class*='dark'] {
