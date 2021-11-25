@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Footer, Header } from './components';
+import ReadyToStart from './components/ReadyToStart/ReadyToStart';
 import { Home } from './Pages/Index';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
 					<Route path="/" element={<Home />} />
 				</Routes>
 			</div>
+			<ReadyToStart />
 			<Footer />
 		</div>
 	);

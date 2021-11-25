@@ -99,6 +99,7 @@ const Styles = styled.div`
 		width: 100%;
 		max-width: 320px;
 		margin: 0 auto;
+		margin-bottom: 100px;
 		&__item {
 			text-align: center;
 			margin-top: 40px;
