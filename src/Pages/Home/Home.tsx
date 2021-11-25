@@ -3,6 +3,7 @@ import { EmailInput } from '../../components';
 // Illustration
 import HeroImage from '../../assets/home/desktop/illustration-phone-mockup.svg';
 import EasyImage from '../../assets/home/desktop/illustration-easy-to-implement.svg';
+import SimpleImage from '../../assets/home/desktop/illustration-simple-ui.svg';
 // Logos
 import Tesla from '../../assets/shared/desktop/tesla-light.svg';
 import Microsoft from '../../assets/shared/desktop/microsoft-light.svg';
@@ -68,6 +69,18 @@ const Home = () => {
 						Our API comes with just a few lines of code. You’ll be up and
 						running in no time. We built our documentation page to integrate
 						payments functionality with ease.
+					</p>
+				</section>
+			</article>
+			<article className="simple">
+				<figure className="simple__figure">
+					<img src={SimpleImage} alt="" className="simple__figure__image" />
+				</figure>
+				<section className="simple__text">
+					<h2>Simple UI & UX</h2>
+					<p>
+						Our pre-built form is easy to integrate in your app or website’s
+						checkout flow and designed to optimize conversion.
 					</p>
 				</section>
 			</article>

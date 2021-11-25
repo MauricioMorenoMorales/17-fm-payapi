@@ -71,6 +71,29 @@ const Styles = styled.div`
 			text-align: center;
 			max-width: 320px;
 			margin: 0 auto;
+			& > p {
+				color: ${colorSystem.lightSanJuanBlue};
+			}
+		}
+	}
+	.simple {
+		margin-top: 100px;
+		margin-bottom: 100px;
+		&__figure {
+			display: flex;
+			justify-content: center;
+			&__image {
+				width: 100%;
+				max-width: 400px;
+			}
+		}
+		&__text {
+			text-align: center;
+			max-width: 320px;
+			margin: 0 auto;
+			& > p {
+				color: ${colorSystem.lightSanJuanBlue};
+			}
 		}
 	}
 	@media screen and (min-width: 768px) {
@@ -97,6 +120,18 @@ const Styles = styled.div`
 			}
 		}
 		.easy {
+			&__figure {
+				&__image {
+					max-width: 600px;
+					margin-left: 70px;
+				}
+			}
+			&__text {
+				max-width: 520px;
+				margin-top: -100px;
+			}
+		}
+		.simple {
 			&__figure {
 				&__image {
 					max-width: 600px;
@@ -165,6 +200,24 @@ const Styles = styled.div`
 			&__text {
 				margin: 0;
 				margin-top: 70px;
+				text-align: start;
+			}
+		}
+		.simple {
+			display: flex;
+			flex-direction: row-reverse;
+			max-width: 1200px;
+			margin: 0 auto;
+			&__figure {
+				&__image {
+					margin: 0;
+					max-width: 900px;
+				}
+			}
+			&__text {
+				margin: 0;
+				padding-left: 20px;
+				margin-top: 100px;
 				text-align: start;
 			}
 		}
