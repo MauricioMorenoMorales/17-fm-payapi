@@ -73,8 +73,8 @@ a:hover {
 	color: var(--light-san-juan-blue);
 }
 
-[class~='red'] {
-	color: red;
+[class~='accent'] {
+	color: var(--dark-pink);
 }
 
 [class*='dark'] {
@@ -107,6 +107,17 @@ button[class~='secondary-light'] {
 button[class~='secondary-light']:hover {
 	background-color: var(--link-water-white);
 	color: var(--mirage-blue);
+}
+
+button[class~='secondary-dark'] {
+	background-color: transparent;
+	color: var(--mirage-blue);
+	border: 2px solid var(--mirage-blue);
+}
+
+button[class~='secondary-dark']:hover {
+	background-color: var(--mirage-blue);
+	color: var(--link-water-white);
 }
 
 button:hover {

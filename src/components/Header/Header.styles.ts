@@ -26,7 +26,7 @@ const Styles = styled.div`
 		align-items: flex-end;
 		&.active {
 			background-color: ${colorSystem.mirageBlue};
-			height: 100vh;
+			height: 3000px;
 			width: 300px;
 		}
 		& > button {

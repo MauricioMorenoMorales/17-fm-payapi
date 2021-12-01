@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Footer, Header } from './components';
 import ReadyToStart from './components/ReadyToStart/ReadyToStart';
-import { Home, About } from './Pages/Index';
+import { Home, About, Pricing } from './Pages/Index';
 
 const App = () => {
 	return (
@@ -13,6 +13,7 @@ const App = () => {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
+					<Route path="/pricing" element={<Pricing />} />
 				</Routes>
 			</div>
 			<ReadyToStart />
