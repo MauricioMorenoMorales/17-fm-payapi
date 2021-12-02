@@ -1,27 +1,42 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Styles from './Header.styles';
 import Logo from '../../assets/shared/desktop/logo.svg';
 import './Hamburger.css';
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 
 const Header = () => {
 	const [menuOpened, setMenuOpened] = useState(false);
+	const navigate = useNavigate();
+
+	useEffect(() => {
+		document.addEventListener('scroll', event => )
+	}, [])
 	return (
 		<Styles>
 			<header className="header">
 				<section className="header__left">
-					<img className="header__left__logo" src={Logo} alt="" />
-					<a href="/" className="header__left__link">
+					<img
+						onClick={() => {
+							setMenuOpened(false);
+							navigate('/');
+						}}
+						className="header__left__logo"
+						src={Logo}
+						alt=""
+					/>
+					<Link to="/pricing" className="header__left__link">
 						Pricing
-					</a>
-					<a href="/" className="header__left__link">
+					</Link>
+					<Link to="/about" className="header__left__link">
 						About
-					</a>
-					<a href="/" className="header__left__link">
+					</Link>
+					<Link to="/contact" className="header__left__link">
 						Contact
-					</a>
+					</Link>
 				</section>
 				<section className="header__right">
-					<button>Schedule a Demo</button>
+					<button onClick={() => navigate('/contact')}>Schedule a Demo</button>
 				</section>
 			</header>
 			<div className={`plegable-menu ${menuOpened && 'active'}`}>
@@ -39,16 +54,35 @@ const Header = () => {
 				</button>
 				{menuOpened && (
 					<div className="plegable-menu__content">
-						<a href="/" className="plegable-menu__content__link">
+						<Link
+							to="/pricing"
+							className="plegable-menu__content__link"
+							onClick={() => setMenuOpened(false)}
+						>
 							Pricing
-						</a>
-						<a href="/" className="plegable-menu__content__link">
+						</Link>
+						<Link
+							to="/pricing"
+							className="plegable-menu__content__link"
+							onClick={() => setMenuOpened(false)}
+						>
 							About
-						</a>
-						<a href="/" className="plegable-menu__content__link">
+						</Link>
+						<Link
+							to="/pricing"
+							className="plegable-menu__content__link"
+							onClick={() => setMenuOpened(false)}
+						>
 							Contact
-						</a>
-						<button>Schedule a Demo</button>
+						</Link>
+						<button
+							onClick={() => {
+								navigate('/contact');
+								setMenuOpened(false);
+							}}
+						>
+							Schedule a Demo
+						</button>
 					</div>
 				)}
 			</div>

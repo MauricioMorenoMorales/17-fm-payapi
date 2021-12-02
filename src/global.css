@@ -10,6 +10,10 @@
 	--page-background: #edf3f8;
 }
 
+img {
+	max-width: 100%;
+}
+
 html {
 	background-color: var(--page-background);
 }

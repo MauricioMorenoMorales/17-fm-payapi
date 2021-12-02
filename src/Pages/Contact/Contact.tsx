@@ -9,21 +9,22 @@ import Google from '../../assets/shared/desktop/google.svg';
 import Nvidia from '../../assets/shared/desktop/nvidia.svg';
 
 const Contact = () => {
-	const [invalidEmail, setInvalidEmail] = useState<boolean>(false);
-	const [invalidName, setInvalidName] = useState<boolean>(false);
-	const [invalidCompany, setInvalidCompany] = useState<boolean>(false);
-	const [invalidTitle, setInvalidTitle] = useState<boolean>(false);
-	const [invalidMessage, setInvalidMessage] = useState<boolean>(false);
+	const [validEmail, setValidEmail] = useState<boolean | null>(null);
+	const [validName, setValidName] = useState<boolean | null>(null);
+	const [validCompany, setValidCompany] = useState<boolean | null>(null);
+	const [validTitle, setValidTitle] = useState<boolean | null>(null);
+	const [validMessage, setValidMessage] = useState<boolean | null>(null);
 
 	const handleSubmit = (event: React.SyntheticEvent) => {
 		if (
-			invalidEmail ||
-			invalidName ||
-			invalidCompany ||
-			invalidTitle ||
-			invalidMessage
+			!validEmail ||
+			!validName ||
+			!validCompany ||
+			!validTitle ||
+			!validMessage
 		) {
 			event.preventDefault();
+			alert('Please fill the form');
 			return;
 		} else {
 			alert('Thanks for the Message :)');
@@ -41,59 +42,59 @@ const Contact = () => {
 						type="text"
 						placeholder="Name"
 						title="Name"
-						className={`${invalidName && 'active'}`}
+						className={`${validName === false && 'active'}`}
 						onChange={event =>
-							setInvalidName(!(event.target.value.trim().length >= 3))
+							setValidName(event.target.value.trim().length >= 3)
 						}
 					/>
-					<p className={`input-error ${invalidName && 'active'}`}>
-						Name should be at least 3 Characters
+					<p className={`input-error ${validName === false && 'active'}`}>
+						Name must contain at least 3 Characters
 					</p>
 					<input
 						type="text"
-						className={`${invalidEmail && 'active'}`}
+						className={`${validEmail === false && 'active'}`}
 						placeholder="Email Address"
 						onChange={event =>
-							setInvalidEmail(
-								!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+							setValidEmail(
+								/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
 									event.target.value,
 								),
 							)
 						}
 					/>
-					<p className={`input-error ${invalidEmail && 'active'}`}>
+					<p className={`input-error ${validEmail === false && 'active'}`}>
 						Invalid Email
 					</p>
 					<input
 						type="text"
 						placeholder="Company Name"
-						className={`${invalidCompany && 'active'}`}
+						className={`${validCompany === false && 'active'}`}
 						onChange={event =>
-							setInvalidCompany(!(event.target.value.trim().length >= 3))
+							setValidCompany(event.target.value.trim().length >= 3)
 						}
 					/>
-					<p className={`input-error ${invalidCompany && 'active'}`}>
-						Company Name should contain at least 3 letters
+					<p className={`input-error ${validCompany === false && 'active'}`}>
+						Company Name must contain at least 3 letters
 					</p>
 					<input
 						type="text"
 						placeholder="Title"
-						className={`${invalidTitle && 'active'}`}
+						className={`${validTitle === false && 'active'}`}
 						onChange={event =>
-							setInvalidTitle(!(event.target.value.trim().length >= 3))
+							setValidTitle(event.target.value.trim().length >= 3)
 						}
 					/>
-					<p className={`input-error ${invalidTitle && 'active'}`}>
+					<p className={`input-error ${validTitle === false && 'active'}`}>
 						Title must contain at least 3 characters
 					</p>
 					<textarea
 						placeholder="Message"
-						className={`${invalidMessage && 'active'}`}
+						className={`${validMessage === false && 'active'}`}
 						onChange={event =>
-							setInvalidMessage(!(event.target.value.trim().length > 0))
+							setValidMessage(event.target.value.trim().length > 0)
 						}
 					/>
-					<p className={`input-error ${invalidMessage && 'active'}`}>
+					<p className={`input-error ${validMessage === false && 'active'}`}>
 						This field can't be empty
 					</p>
 					<button className="secondary-dark">Submit</button>

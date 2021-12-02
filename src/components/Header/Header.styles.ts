@@ -12,6 +12,9 @@ const Styles = styled.div`
 			&__link {
 				display: none;
 			}
+			&__logo {
+				cursor: pointer;
+			}
 		}
 		&__right {
 			display: none;
