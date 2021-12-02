@@ -22,6 +22,9 @@ const Styles = styled.div`
 		border: none;
 		padding-left: 30px;
 		outline: none;
+		&.error {
+			border: 1px solid red;
+		}
 	}
 	@media screen and (min-width: 768px) {
 		flex-direction: row;
@@ -31,6 +34,7 @@ const Styles = styled.div`
 		& > button {
 			margin-left: -50px;
 			min-width: 200px;
+			margin-top: 4px;
 		}
 	}
 `;

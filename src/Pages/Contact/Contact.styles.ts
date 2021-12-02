@@ -1,14 +1,19 @@
 import styled from 'styled-components';
+import circlePattern from '../../assets/shared/desktop/bg-pattern-circle.svg';
 
 const Styles = styled.div`
 	padding-top: 130px;
+	background-image: url(${circlePattern});
+	background-position-y: -600px;
+	background-position-x: 30vw;
+	background-repeat: no-repeat;
 	& > h2 {
 		text-align: center;
 		max-width: 390px;
 		margin: 0 auto;
 		padding: 20px;
 	}
-	.container {
+	.inner-container {
 		width: 100%;
 		padding: 25px;
 	}
@@ -37,6 +42,7 @@ const Styles = styled.div`
 		}
 	}
 	@media screen and (min-width: 768px) {
+		background-position-x: 50vw;
 		h2 {
 			max-width: 490px;
 		}
@@ -51,14 +57,17 @@ const Styles = styled.div`
 		}
 	}
 	@media screen and (min-width: 1100px) {
-		max-width: 1100px;
-		margin: 0 auto;
+		background-position-x: 65vw;
+		.outer-container {
+			max-width: 1100px;
+			margin: 0 auto;
+		}
 		h2 {
 			text-align: start;
 			max-width: 900px;
-			margin-left: 0;
+			margin-left: 20px;
 		}
-		.container {
+		.inner-container {
 			display: grid;
 			grid-template-columns: 460px auto;
 			gap: 50px;

@@ -6,10 +6,12 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import './normalize.css';
 import './global.css';
+import ScrollToTop from './Helpers/ScrollToTop';
 
 ReactDOM.render(
 	<React.StrictMode>
 		<Router>
+			<ScrollToTop />
 			<App />
 		</Router>
 	</React.StrictMode>,

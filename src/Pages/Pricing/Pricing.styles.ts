@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 import { colorSystem } from '../../global/designSystem';
 import Check from '../../assets/shared/desktop/icon-check.svg';
+import circlePattern from '../../assets/shared/desktop/bg-pattern-circle.svg';
 
 const Styles = styled.div`
 	padding-top: 100px;
+	background-image: url(${circlePattern});
+	background-position-y: -600px;
+	background-position-x: 30vw;
+	background-repeat: no-repeat;
 	& > h2 {
 		text-align: center;
 	}
@@ -40,6 +45,7 @@ const Styles = styled.div`
 		}
 	}
 	@media screen and (min-width: 768px) {
+		background-position-x: 50vw;
 		.container {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
@@ -49,6 +55,7 @@ const Styles = styled.div`
 		}
 	}
 	@media screen and (min-width: 1100px) {
+		background-position-x: 65vw;
 		.container {
 			max-width: 1000px;
 		}

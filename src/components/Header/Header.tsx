@@ -9,9 +9,15 @@ const Header = () => {
 	const [menuOpened, setMenuOpened] = useState(false);
 	const navigate = useNavigate();
 
+	const closeMenuWhenScrolls = () =>
+		window.scrollY > 250 && setMenuOpened(false);
+
 	useEffect(() => {
-		document.addEventListener('scroll', event => )
-	}, [])
+		document.addEventListener('scroll', closeMenuWhenScrolls);
+		return () => {
+			document.addEventListener('scroll', closeMenuWhenScrolls);
+		};
+	}, []);
 	return (
 		<Styles>
 			<header className="header">
@@ -62,14 +68,14 @@ const Header = () => {
 							Pricing
 						</Link>
 						<Link
-							to="/pricing"
+							to="/about"
 							className="plegable-menu__content__link"
 							onClick={() => setMenuOpened(false)}
 						>
 							About
 						</Link>
 						<Link
-							to="/pricing"
+							to="/contact"
 							className="plegable-menu__content__link"
 							onClick={() => setMenuOpened(false)}
 						>

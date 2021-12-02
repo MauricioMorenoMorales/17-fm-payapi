@@ -55,6 +55,7 @@ const Styles = styled.div`
 		}
 	}
 	@media screen and (min-width: 768px) {
+		background-position-x: 50vw;
 		& > h2 {
 			text-align: start;
 			max-width: 700px;
@@ -79,6 +80,7 @@ const Styles = styled.div`
 		}
 	}
 	@media screen and (min-width: 1000px) {
+		background-position-x: 65vw;
 		& > h2 {
 			max-width: 920px;
 			text-align: start;

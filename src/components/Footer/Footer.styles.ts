@@ -14,6 +14,7 @@ const Styles = styled.div`
 			}
 			&__logo {
 				width: 120px;
+				cursor: pointer;
 			}
 		}
 		&__right {

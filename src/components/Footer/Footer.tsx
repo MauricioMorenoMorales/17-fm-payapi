@@ -1,23 +1,31 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/shared/desktop/logo-light.svg';
 import { Icons } from '../atoms';
 import Styles from './Footer.styles';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+	const navigate = useNavigate();
 	return (
 		<Styles>
 			<footer className="footer">
 				<div className="footer__left">
-					<img className="footer__left__logo" src={Logo} alt="" />
-					<a href="/" className="footer__left__link">
+					<img
+						className="footer__left__logo"
+						src={Logo}
+						alt="Company Logo"
+						onClick={() => navigate('/')}
+					/>
+					<Link to="/pricing" className="footer__left__link">
 						Pricing
-					</a>
-					<a href="/" className="footer__left__link">
+					</Link>
+					<Link to="/about" className="footer__left__link">
 						About
-					</a>
-					<a href="/" className="footer__left__link">
+					</Link>
+					<Link to="/contact" className="footer__left__link">
 						Contact
-					</a>
+					</Link>
 				</div>
 				<div className="footer__right">
 					<Icons type="facebook" />
