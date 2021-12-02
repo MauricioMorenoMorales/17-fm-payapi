@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Footer, Header } from './components';
 import ReadyToStart from './components/ReadyToStart/ReadyToStart';
-import { Home, About, Pricing } from './Pages/Index';
+import { Home, About, Pricing, Contact } from './Pages/Index';
 
 const App = () => {
 	return (
@@ -14,6 +14,7 @@ const App = () => {
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/pricing" element={<Pricing />} />
+					<Route path="/contact" element={<Contact />} />
 				</Routes>
 			</div>
 			<ReadyToStart />
