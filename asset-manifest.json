@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/17-fm-payapi/static/css/main.513f82fc.chunk.css",
-    "main.js": "/17-fm-payapi/static/js/main.45f6de1a.chunk.js",
-    "main.js.map": "/17-fm-payapi/static/js/main.45f6de1a.chunk.js.map",
+    "main.js": "/17-fm-payapi/static/js/main.8447441e.chunk.js",
+    "main.js.map": "/17-fm-payapi/static/js/main.8447441e.chunk.js.map",
     "runtime-main.js": "/17-fm-payapi/static/js/runtime-main.2604da52.js",
     "runtime-main.js.map": "/17-fm-payapi/static/js/runtime-main.2604da52.js.map",
-    "static/js/2.fe8a3cb2.chunk.js": "/17-fm-payapi/static/js/2.fe8a3cb2.chunk.js",
-    "static/js/2.fe8a3cb2.chunk.js.map": "/17-fm-payapi/static/js/2.fe8a3cb2.chunk.js.map",
+    "static/js/2.134b2d31.chunk.js": "/17-fm-payapi/static/js/2.134b2d31.chunk.js",
+    "static/js/2.134b2d31.chunk.js.map": "/17-fm-payapi/static/js/2.134b2d31.chunk.js.map",
     "static/js/3.3ce5d12e.chunk.js": "/17-fm-payapi/static/js/3.3ce5d12e.chunk.js",
     "static/js/3.3ce5d12e.chunk.js.map": "/17-fm-payapi/static/js/3.3ce5d12e.chunk.js.map",
     "index.html": "/17-fm-payapi/index.html",
     "static/css/main.513f82fc.chunk.css.map": "/17-fm-payapi/static/css/main.513f82fc.chunk.css.map",
-    "static/js/2.fe8a3cb2.chunk.js.LICENSE.txt": "/17-fm-payapi/static/js/2.fe8a3cb2.chunk.js.LICENSE.txt",
+    "static/js/2.134b2d31.chunk.js.LICENSE.txt": "/17-fm-payapi/static/js/2.134b2d31.chunk.js.LICENSE.txt",
     "static/media/bg-pattern-circle.2f3a4c70.svg": "/17-fm-payapi/static/media/bg-pattern-circle.2f3a4c70.svg",
     "static/media/google-light.4ec5ec03.svg": "/17-fm-payapi/static/media/google-light.4ec5ec03.svg",
     "static/media/google.94879ccf.svg": "/17-fm-payapi/static/media/google.94879ccf.svg",
@@ -41,8 +41,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2604da52.js",
-    "static/js/2.fe8a3cb2.chunk.js",
+    "static/js/2.134b2d31.chunk.js",
     "static/css/main.513f82fc.chunk.css",
-    "static/js/main.45f6de1a.chunk.js"
+    "static/js/main.8447441e.chunk.js"
   ]
 }
