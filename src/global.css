@@ -16,6 +16,8 @@ img {
 
 html {
 	background-color: var(--page-background);
+	max-width: 2000px;
+	margin: 0 auto;
 }
 
 h1 {

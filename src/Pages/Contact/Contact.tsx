@@ -8,13 +8,15 @@ import Oracle from '../../assets/shared/desktop/oracle.svg';
 import Google from '../../assets/shared/desktop/google.svg';
 import Nvidia from '../../assets/shared/desktop/nvidia.svg';
 import { EmailRegex } from '../../Helpers/EmailRegex';
+import Radio from '../../components/atoms/Radio/Radio';
 
-const Contact = () => {
+const Contact: React.FC = () => {
 	const [validEmail, setValidEmail] = useState<boolean | null>(null);
 	const [validName, setValidName] = useState<boolean | null>(null);
 	const [validCompany, setValidCompany] = useState<boolean | null>(null);
 	const [validTitle, setValidTitle] = useState<boolean | null>(null);
 	const [validMessage, setValidMessage] = useState<boolean | null>(null);
+	const [radioActive, setRadioActive] = useState<boolean>(false);
 
 	const handleSubmit = (event: React.SyntheticEvent) => {
 		if (
@@ -92,6 +94,16 @@ const Contact = () => {
 								setValidMessage(event.target.value.trim().length > 0)
 							}
 						/>
+						<div className="check">
+							<Radio
+								activeState={radioActive}
+								setStateFunction={setRadioActive}
+							/>
+							<p>
+								Stay up-to-date with company announcements and updates to our
+								API
+							</p>
+						</div>
 						<p className={`input-error ${validMessage === false && 'active'}`}>
 							This field can't be empty
 						</p>

@@ -73,21 +73,24 @@ const Home = () => {
 						Our API comes with just a few lines of code. You’ll be up and
 						running in no time. We built our documentation page to integrate
 						payments functionality with ease.
-					</p>
+					</p>/
 				</section>
 			</article>
-			<article className="simple">
-				<figure className="simple__figure">
-					<img src={SimpleImage} alt="" className="simple__figure__image" />
-				</figure>
-				<section className="simple__text">
-					<h2>Simple UI & UX</h2>
-					<p>
-						Our pre-built form is easy to integrate in your app or website’s
-						checkout flow and designed to optimize conversion.
-					</p>
-				</section>
-			</article>
+			<div className="simple--background">
+				<article className="simple">
+					<figure className="simple__figure">
+						<img src={SimpleImage} alt="" className="simple__figure__image" />
+					</figure>
+					<section className="simple__text">
+						<h2>Simple UI & UX</h2>
+						<p>
+							Our pre-built form is easy to integrate in your app or website’s
+							checkout flow and designed to optimize conversion.
+						</p>
+					</section>
+				</article>
+			</div>
+
 			<article className="features">
 				<div className="features__item">
 					<figure className="features__item__figure">

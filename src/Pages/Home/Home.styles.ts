@@ -30,6 +30,10 @@ const Styles = styled.div`
 	.wework {
 		padding: 50px 20px;
 		background-color: ${colorSystem.mirageBlue};
+		background-image: url(${circlePattern});
+		background-repeat: no-repeat;
+		background-position-y: -300px;
+		background-size: 100% 70%;
 		&__logos {
 			display: grid;
 			grid-template-columns: 50% 50%;
@@ -196,6 +200,9 @@ const Styles = styled.div`
 			}
 		}
 		.wework {
+			background-size: 800px 800px;
+			background-position-x: -300px;
+			background-position-y: -300px;
 			&--wrapper {
 				display: flex;
 				flex-direction: row-reverse;
@@ -232,6 +239,12 @@ const Styles = styled.div`
 			flex-direction: row-reverse;
 			max-width: 1200px;
 			margin: 0 auto;
+			&--background {
+				background-image: url(${circlePattern});
+				background-repeat: no-repeat;
+				background-position-x: 120%;
+				background-size: 500px;
+			}
 			&__figure {
 				&__image {
 					margin: 0;

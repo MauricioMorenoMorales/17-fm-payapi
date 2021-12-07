@@ -1,8 +1,14 @@
 import styled from 'styled-components';
+import circlePattern from '../../assets/shared/desktop/bg-pattern-circle.svg';
 import { colorSystem } from '../../global/designSystem';
 
 const Styles = styled.div`
 	background-color: ${colorSystem.mirageBlue};
+	background-image: url(${circlePattern});
+	background-size: 800px 800px;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: 120px;
 	.footer {
 		padding-bottom: 60px;
 		&__left {
@@ -27,6 +33,8 @@ const Styles = styled.div`
 		}
 	}
 	@media screen and (min-width: 768px) {
+		background-position-x: 50vw;
+		background-position-y: 0;
 		.footer {
 			display: flex;
 			justify-content: space-between;

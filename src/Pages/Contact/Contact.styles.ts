@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import circlePattern from '../../assets/shared/desktop/bg-pattern-circle.svg';
+import { colorSystem } from '../../global/designSystem';
 
 const Styles = styled.div`
 	padding-top: 130px;
@@ -7,7 +8,7 @@ const Styles = styled.div`
 	background-position-y: -600px;
 	background-position-x: 30vw;
 	background-repeat: no-repeat;
-	& > h2 {
+	& h2 {
 		text-align: center;
 		max-width: 390px;
 		margin: 0 auto;
@@ -23,6 +24,16 @@ const Styles = styled.div`
 		margin: 0 auto;
 		& > button {
 			margin-top: 20px;
+		}
+	}
+	.check {
+		display: grid;
+		grid-template-columns: 24px 1fr;
+		align-items: center;
+		max-width: 400px;
+		& > p {
+			margin-left: 20px;
+			color: ${colorSystem.lightSanJuanBlue};
 		}
 	}
 	.companies {
@@ -43,7 +54,7 @@ const Styles = styled.div`
 	}
 	@media screen and (min-width: 768px) {
 		background-position-x: 50vw;
-		h2 {
+		& h2 {
 			max-width: 490px;
 		}
 		& form {
